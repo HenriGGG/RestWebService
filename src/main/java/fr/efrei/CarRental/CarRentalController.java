@@ -9,12 +9,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 
 @RestController
-public class CarRentalService {
+public class CarRentalController {
 	
 	private List<Car> cars = new ArrayList<Car>();
 	private List<Rent> rents = new ArrayList<Rent>();
 	
-	public CarRentalService() {
+	public CarRentalController() {
 		cars.add(new Car("11AA22", "Ferrari", 1000));
 		cars.add(new Car("33BB44", "Porshe", 2222));
 	}
